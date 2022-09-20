@@ -1,0 +1,100 @@
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background:#FFFFFF;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: white;
+}
+
+.header {
+  width: 100%;
+  max-width: 1440px;
+  background: #52503B;
+}
+
+.nav {
+  margin: 20px 120px;
+}
+
+.nav-ul-main {
+  position: relative;
+  margin-left: 370px;
+}
+
+.nav-ul-main-li,
+.nav-ul-main {
+  display: inline-block; /*позиціонування елементів навігації, вирішила потренуватись з даною функцією замість flex*/ 
+}
+
+.nav-ul-main-li {
+  padding: 4px;
+}
+
+.nav-ul-main-li:hover ul { /*випадає підменю при наведенні курсора*/ 
+  display: block;
+}
+
+.nav-ul-level-1:hover li {
+  display: block;
+}
+
+/*стилізація посилань*/ 
+.nav a { 
+  display: block;
+  padding: 0px 10px;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.a-with-plus::after { /*В CSS3 появилась запись ::after (с двумя двоеточиями) для различения псевдоклассов и псевдоэлементов*/
+  content: "+";
+}
+
+
+/*змінюємо колір посилань при наведенні на них*/  
+.nav a:hover {
+  background-color: grey;
+  border: 1px solid black;
+}
+
+/*підменю*/ 
+.nav-ul-level-1 {
+  display: none; /*ховаємо випадаюче меню 1 рівня*/
+  position: absolute; /*задаємо позиціонування*/
+  background: #878462;
+  top: 68px;
+  left: 96px;
+}
+
+.nav-ul-level-1-li {
+  width: 200px;
+  position: relative;
+}
+
+.nav-ul-level-1-1 {
+  display: none; /*ховаємо випадаюче меню 2 рівня*/
+  position: absolute; /*задаємо позиціонування*/ 
+  background: #9f9c78; 
+  top: 0px;
+  left: 200px;
+}
+
+.nav-ul-level-1-1-li {
+  width: 200px;
+  position: relative;
+}
+
+
+
+
+
+
+
