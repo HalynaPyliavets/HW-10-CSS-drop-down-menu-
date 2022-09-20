@@ -31,18 +31,6 @@ body {
   display: inline-block; /*позиціонування елементів навігації, вирішила потренуватись з даною функцією замість flex*/ 
 }
 
-.nav-ul-main-li {
-  padding: 4px;
-}
-
-.nav-ul-main-li:hover ul { /*випадає підменю при наведенні курсора*/ 
-  display: block;
-}
-
-.nav-ul-level-1:hover li {
-  display: block;
-}
-
 /*стилізація посилань*/ 
 .nav a { 
   display: block;
@@ -58,15 +46,26 @@ body {
   content: "+";
 }
 
-
 /*змінюємо колір посилань при наведенні на них*/  
 .nav a:hover {
   background-color: grey;
   border: 1px solid black;
 }
 
+.nav-ul-main-li {
+  padding: 4px;
+}
+
+.nav ul li:hover > ul { /*випадає підменю 1 рівня при наведенні курсора*/ 
+  display: block;
+}
+
+.nav ul ul li:hover > ul { /*випадає підменю 2 рівня при наведенні курсора*/ 
+  display: block;
+}
+
 /*підменю*/ 
-.nav-ul-level-1 {
+.nav ul ul {
   display: none; /*ховаємо випадаюче меню 1 рівня*/
   position: absolute; /*задаємо позиціонування*/
   background: #878462;
@@ -79,7 +78,7 @@ body {
   position: relative;
 }
 
-.nav-ul-level-1-1 {
+.nav ul ul ul {
   display: none; /*ховаємо випадаюче меню 2 рівня*/
   position: absolute; /*задаємо позиціонування*/ 
   background: #9f9c78; 
