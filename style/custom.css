@@ -1,24 +1,24 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background:#FFFFFF;
+  background:#e1dcdc;
 }
 
 .container {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  background: white;
+  background:#e1dcdc;
 }
 
 .header {
   width: 100%;
   max-width: 1440px;
-  background: #52503B;
+  background: #646148;
 }
 
 .nav {
-  margin: 20px 120px;
+  margin: 40px 120px;
 }
 
 .nav-ul-main {
@@ -29,6 +29,20 @@ body {
 .nav-ul-main-li,
 .nav-ul-main {
   display: inline-block; /*позиціонування елементів навігації, вирішила потренуватись з даною функцією замість flex*/ 
+}
+
+.nav li{
+  border: 1px solid transparent; /*прибираємо подригування*/
+}
+
+/*змінюємо колір посилань при наведенні на них*/  
+.nav li:hover {
+  background-color: rgb(158, 157, 157);
+  border: 1px solid black;
+}
+
+.nav-ul-main-li {
+  padding: 4px;
 }
 
 /*стилізація посилань*/ 
@@ -42,20 +56,11 @@ body {
   text-transform: uppercase;
 }
 
-.a-with-plus::after { /*В CSS3 появилась запись ::after (с двумя двоеточиями) для различения псевдоклассов и псевдоэлементов*/
+.a-with-plus::after { /*Помітка для мене - в CSS3 появилась запись ::after (с двумя двоеточиями) для различения псевдоклассов и псевдоэлементов*/
   content: "+";
 }
 
-/*змінюємо колір посилань при наведенні на них*/  
-.nav a:hover {
-  background-color: grey;
-  border: 1px solid black;
-}
-
-.nav-ul-main-li {
-  padding: 4px;
-}
-
+/*підменю*/ 
 .nav ul li:hover > ul { /*випадає підменю 1 рівня при наведенні курсора*/ 
   display: block;
 }
@@ -64,13 +69,12 @@ body {
   display: block;
 }
 
-/*підменю*/ 
 .nav ul ul {
   display: none; /*ховаємо випадаюче меню 1 рівня*/
   position: absolute; /*задаємо позиціонування*/
   background: #878462;
-  top: 68px;
-  left: 96px;
+  top: 70px;
+  left: 94px;
 }
 
 .nav-ul-level-1-li {
@@ -83,7 +87,7 @@ body {
   position: absolute; /*задаємо позиціонування*/ 
   background: #9f9c78; 
   top: 0px;
-  left: 200px;
+  left: 199px;
 }
 
 .nav-ul-level-1-1-li {
