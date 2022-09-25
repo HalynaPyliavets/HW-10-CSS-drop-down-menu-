@@ -1,7 +1,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background:#e1dcdc;
+  background:#f3eeee;
 }
 
 .container {
@@ -32,7 +32,7 @@ body {
 }
 
 .nav li{
-  border: 1px solid transparent; /*прибираємо подригування*/
+  border: 1px solid transparent; /*прибираємо подригування*/ 
 }
 
 /*змінюємо колір посилань при наведенні на них*/  
